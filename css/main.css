@@ -150,6 +150,7 @@ a:hover{ color:#ff214f;}
 .main-nav ul li.active a, .main-nav ul li a:hover{ color:#ff214f;}
 .search{ display:table; padding:0 35px; margin:30px 0 0 0;}
 .search input[type="text"]{ border:1px solid #ededed; background:#fff; color:#232323; height:30px; padding:0 12px; font-size:11px; width:100%; display:table-cell; font-family: 'Montserrat', sans-serif;}
+.search input[type="text"]:focus{outline: none;}
 .input-search-wrap{ width:1%; display:table-cell;}
 .input-search-wrap button[type="submit"]{ border:1px solid #ededed; background:#fff; color:#939393; font-size:11px; height:30px; padding:0 15px; margin:0 0 0 -1px;}
 .input-search-wrap button[type="submit"]:hover{ background:#f7f7f7;}
