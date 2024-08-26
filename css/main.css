@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto:400,500');
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto:400,500');*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@400;500&display=swap');
+
+
 .pace{-webkit-pointer-events: none; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 .pace-active{ background:#fff; position:fixed; top:0; left:0; width:100%; height:100%; z-index:1500;}
 .pace.pace-inactive .pace-progress{ display:none;}
@@ -51,12 +56,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #ff214f;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #ff214f;
     text-shadow: none;
 }
 
@@ -243,8 +248,16 @@ display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: c
 
 
 
+/*Responsive*/
 
+@media only screen and (max-width: 1199px) {
+.side-menu{overflow-x: auto;}
 
+}
+@media only screen and (max-width: 1023px) {}
+@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 479px) {}
 
 
 
