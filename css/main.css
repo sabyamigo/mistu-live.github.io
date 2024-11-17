@@ -179,10 +179,10 @@ a.main-btn:hover{ background:rgba(0,0,0,0); color:#232323;}
 
 .home-about{ background:#1c1c1c;}
 .wrapper{ padding:0 40px;}
-.home-about .about-img{ width:40%; float:left;}
-.home-about .about-img img{ width:100%;}
+.home-about .about-img{ width:40%; float:left; text-align: center;}
+.home-about .about-img img{ width:65%; display: inline-block;}
 .sec-top-gap{ padding:60px 0;}
-.about-info{ float:right; width:60%; padding:45px 0 0 80px;}
+.about-info{ float:right; width:60%; padding:45px 0 0 30px;}
 .about-info h3{ margin-bottom:15px; color:#939393;}
 .about-info p{ margin-bottom:10px;}
 .about-info p:last-of-type{ margin-bottom:20px;}
