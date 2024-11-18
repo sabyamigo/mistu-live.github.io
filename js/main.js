@@ -34,12 +34,13 @@ jQuery(document).ready(function() {
         });
     });
 
+
     $(".filter-controls-wrap li").click(function(e) {
         $(".filter-controls-wrap li.active").removeClass('active');
         $(this).addClass('active');
     });
 
-
+    //nav scroll
     $('a[href*="#"]').on('click', function(e) {
         e.preventDefault();
 
@@ -48,6 +49,7 @@ jQuery(document).ready(function() {
         }, 300, 'linear');
     });
 
+    //on scroll nav class change
     $(window).scroll(function() {
         var windscroll = $(window).scrollTop();
         if (windscroll >= 0) {
