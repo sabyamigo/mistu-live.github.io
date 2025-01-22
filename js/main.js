@@ -69,6 +69,14 @@ jQuery(document).ready(function() {
         }
 
     }).scroll();
+
+
+    //nav active class
+    $(".ham").click(function(e){
+        $("body").toggleClass('toggled');
+        e.preventDefault();
+    });
+
 });
 
 
