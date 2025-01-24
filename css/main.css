@@ -226,8 +226,21 @@ a.main-btn:hover{ background:rgba(0,0,0,0); color:#232323;}
 .work{ text-align:center; padding-bottom:0;}
 .work h2{ text-transform:uppercase; color:#232323; font-family: 'montserratbold';}
 .filter-controls-wrap{ line-height:0; font-size:0; margin:20px 0 30px 0;}
-.filter-controls-wrap li{ display:inline-block; font-size:16px; line-height:28px; width:60px; border:2px solid #232323; background:#232323; color:#fff; margin:0 4px; transition:all 0.3s ease-in-out 0s; -webkit-transition:all 0.3s ease-in-out 0s; -moz-transition:all 0.3s ease-in-out 0s;}
-.filter-controls-wrap li:hover, .filter-controls-wrap li.active{ background:rgba(0,0,0,0); color:#232323;}
+.filter-controls-wrap li{ display:inline-block; font-size:16px; line-height:28px; width:60px; color:#fff; margin:0 4px; transition:all 0.3s ease-in-out 0s; -webkit-transition:all 0.3s ease-in-out 0s; -moz-transition:all 0.3s ease-in-out 0s; position: relative; z-index: 1; background: #232323}
+.filter-controls-wrap li i{ padding: 8px 0; }
+.filter-controls-wrap li.active{ background:rgba(0,0,0,0); color:#232323;}
+.filter-controls-wrap li div, .filter-controls-wrap li div span{ position: relative; display: block;}
+.filter-controls-wrap li div:before, .filter-controls-wrap li div:after, .filter-controls-wrap li div span:before, .filter-controls-wrap li div span:after{ position: absolute; content: ""; z-index: -1; width: 0; height: 2px; background: #232323; transition: all 0.3s linear 0s; -webkit-transition: all 0.3s linear 0s; -moz-transition: all 0.3s linear 0s;}
+.filter-controls-wrap li div span:before, .filter-controls-wrap li div span:after{ height: 0; width: 2px;}
+.filter-controls-wrap li div:before, .filter-controls-wrap li div span:before{ top: 0; left: 0;}
+.filter-controls-wrap li div:after, .filter-controls-wrap li div span:after{ bottom: 0; right: 0; }
+.filter-controls-wrap li.active div:before, .filter-controls-wrap li.active div:after{ width: 100%; }
+.filter-controls-wrap li.active div span:before, .filter-controls-wrap li.active div span:after{ height: 100% }
+
+
+
+
+
 .filter-container ul li{ float:left; width:25%;}
 .filter-container ul li a{ display:block;}
 .filter-container ul li figure{ width:100%; position:relative; overflow:hidden;}
@@ -344,10 +357,12 @@ display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: c
 }
 
 @media only screen and (max-width: 640px) {
+	.nav-body .wrapper{ padding: 0 20px; }
 	.banner-text{ width: 85%; }
 	.blog-grid ul li{ width: 100%; margin: 0 0 40px 0;}
 	.blog-grid ul li:nth-last-child(2){ margin-bottom: 40px; }
 	.two-col{ width: 100% }
+	.contact .contact-info{ padding: 40px 20px}
 }
 
 @media only screen and (max-width: 479px) {

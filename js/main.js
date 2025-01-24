@@ -77,6 +77,11 @@ jQuery(document).ready(function() {
         e.preventDefault();
     });
 
+
+    $(".main-body").click(function() {
+        $("body").removeClass('toggled');
+    });
+    
 });
 
 
